@@ -10,54 +10,38 @@ Answer: git stash
 
 3. When executing a git merge --no-ff command, what specific behavior is enforced by Git?
 
-Answer: 
-
-It forces Git to always create a new merge commit, even if it could have done a fast-forward merge.
+Answer: It forces Git to always create a new merge commit, even if it could have done a fast-forward merge.
 This keeps a clear visual history of the feature branch being merged.
 
 4. What happens when you check out a specific commit hash directly (e.g., git checkout a1b2c3d) instead of a branch name?
 
-Answer:
-
-You enter a "detached HEAD" state, where HEAD points to a specific commit rather than a branch.
+Answer: You enter a "detached HEAD" state, where HEAD points to a specific commit rather than a branch.
 
 5. You need to apply a specific bug-fix commit from a development branch onto a stable release branch 
    without merging the entire branch history. Which command should you use?
 
-Answer: 
-
-git cherry-pick <commit-hash>
+Answer: git cherry-pick <commit-hash>
 
 6. After performing a destructive git reset --hard operation, you realize you lost recent commits that were not on any branch.
    Which utility can retrieve these dangling commits?
 
-Answer:
-
-git reflog
+Answer: git reflog
 
 7. You want to remove untracked files and directories from your working tree, including ignored files listed in .gitignore.
    Which command flag combination achieves this?
 
-Answer:
-
-git clean -fdx
+Answer: git clean -fdx
 
 8.  You need to undo a public commit that has already been pushed to a shared remote repository without altering the existing 
     commit history or disrupting collaborators. Which command is appropriate?\
 
-Answer: 
-
-git revert <commit-hash>
+Answer: git revert <commit-hash>
 
 9. You want to identify the specific commit that introduced a regression bug in a codebase with hundreds of historical commits.
    Which utility automates this binary search process?
 
-Answer:
-
-git bisect
+Answer: git bisect
 
 10. What is the function of the --amend flag when used with git commit?
 
-Answer:
-
-It updates the previous commit by adding new staged changes or modifying the commit message.
+Answer:It updates the previous commit by adding new staged changes or modifying the commit message.
